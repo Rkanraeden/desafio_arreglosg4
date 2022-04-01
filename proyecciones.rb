@@ -20,7 +20,7 @@ semestre_primero = primer_quarter + segundo_quarter
 semestre_segundo = tercer_quarter + cuarto_quarter
 # crear archivo 'resultados.data'
 #crear variable con el resultado y agregar join para tabular
-ventas = [semestre_primero, semestre_segundo].join("\n")
+ventas = [semestre_primero.round(2), semestre_segundo.round(2)].join("\n")
 File.write('resultados.data', ventas)
 
 
