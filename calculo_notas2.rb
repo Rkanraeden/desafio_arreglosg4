@@ -33,7 +33,7 @@ def nota_mas_alta (arr)
             # Agregamos al arreglo "notas_alumno" las notas como integer
             notas_alumno.push(element.to_i)
         end
-        # Agregamos al arreglo "listado" la nota máxima de cada alumno 
+        # Agregamos al arreglo "listado" la nota máxima de cada alumno #
         listado << notas_alumno.max
     end
     return listado.join(',')
